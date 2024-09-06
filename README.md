@@ -11,3 +11,7 @@
 ## Link Praktikum
 
 - Praktikum 2: 
+
+<br>
+
+![alt](docs/main-page.png)
