@@ -21,7 +21,7 @@ void main(List<String> args) {
 }
 ```
 Hasil Run:
-![alt](../../docs/W2_Tugas1.png)
+![alt](../../docs/Week2/W2_Tugas1.png)
 
 **Soal 2**
 <br> &emsp; Mengapa sangat penting untuk memahami bahasa pemrograman Dart sebelum kita menggunakan framework Flutter ? Jelaskan!
