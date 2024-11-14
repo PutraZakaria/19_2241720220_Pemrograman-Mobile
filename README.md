@@ -11,6 +11,8 @@
 ## Link Praktikum
 
 - Praktikum 2: https://github.com/PutraZakaria/19_2241720220_Pemrograman-Mobile/tree/main/src%2FWeek2
+- Praktikum 3: https://github.com/PutraZakaria/19_2241720220_Pemrograman-Mobile/tree/main/src/Week3
+- Praktikum 4: https://github.com/PutraZakaria/19_2241720220_Pemrograman-Mobile/tree/main/src/Week4
 
 <br>
 
