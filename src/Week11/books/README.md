@@ -15,3 +15,9 @@ A new Flutter project.
 
 ![alt](assets/Soal2.png)
 
+**Soal 3: Jelaskan maksud kode langkah 5 tersebut terkait substring dan catchError!**
+
+- substring: digunakan untuk mengambil sebagian teks berdasarkan indeks karakter yang ditentukan. Pada kode yang menggunakan .substring(0, 450), artinya teks yang diambil dimulai dari karakter pertama (indeks 0) hingga karakter ke-450 (tidak termasuk karakter ke-450).
+- catchError: digunakan untuk menangkap dan menangani error yang terjadi saat suatu operasi gagal, seperti kegagalan dalam mendapatkan data. Ketika error terjadi, pesan seperti "An error occurred" dapat ditampilkan sebagai respons.
+
+![alt](assets/Soal3.png)
