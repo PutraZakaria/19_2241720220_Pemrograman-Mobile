@@ -42,3 +42,7 @@ Pada langkah 2 terjadi proses pendeklarasian 2 fungsi, yaitu:
 Pada langkah 5 dan 6 terjadi penambahan untuk logika error handling, misal jika terjadi kesalahan, Completer dapat diselesaikan dengan error menggunakan ```completer.completeError().```, dan hasilnya error akan ditangkap di catchError dan UI menampilkan pesan "An error occurred".
 
 ![alt](assets/Soal6.png)
+
+**Soal 7: Capture hasil praktikum Anda berupa GIF dan lampirkan di README**
+
+![alt](assets/Soal7.gif)
