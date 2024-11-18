@@ -36,3 +36,9 @@ Pada langkah 2 terjadi proses pendeklarasian 2 fungsi, yaitu:
 - ```calculate()```: digunakan untuk menjalankan operasi asynchronous yang tertunda selama 5 detik, lalu menyelesaikan Future yang dikontrol oleh Completer dan mengisi nilai future dengan 42.
 
 ![alt](assets/Soal5.png)
+
+**Soal 6: Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!**
+
+Pada langkah 5 dan 6 terjadi penambahan untuk logika error handling, misal jika terjadi kesalahan, Completer dapat diselesaikan dengan error menggunakan ```completer.completeError().```, dan hasilnya error akan ditangkap di catchError dan UI menampilkan pesan "An error occurred".
+
+![alt](assets/Soal6.png)
