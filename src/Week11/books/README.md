@@ -28,3 +28,11 @@ A new Flutter project.
 - ```langkah 2```: Pada langkah ini dilakukan proses pendeklarasian fungsi async yang digunakan untuk menghitung jumlah nilai yang dikembalikan dari ketiga fungsi yang dideklarasikan pada langkah 1, dimana pada code ini menggunakan perintah await yang menyebabkan code dijalankan secara berurutan dan akan menunggu 3 detik sebelum melanjutkan ke fungsi selanjutnya. Hasil akhirnya diassign ke variabel global (atau state) result untuk diperbarui di UI.
 
 ![alt](assets/Soal4.png)
+
+**Soal 5: Jelaskan maksud kode langkah 2 tersebut!**
+
+Pada langkah 2 terjadi proses pendeklarasian 2 fungsi, yaitu:
+- ```getNumber()```: digunakan untuk mengembalikan sebuah Future yang akan selesai (completed) ketika proses async di fungsi calculate selesai. Dimana didalam fungsi terjadi proses instance Completer<int>, yang akan mengontrol penyelesaian (completion) dari Future, proses pemanggilan fungsi calculate dan pengembalian nilai future yang akan diselesaikan oleh complementer.
+- ```calculate()```: digunakan untuk menjalankan operasi asynchronous yang tertunda selama 5 detik, lalu menyelesaikan Future yang dikontrol oleh Completer dan mengisi nilai future dengan 42.
+
+![alt](assets/Soal5.png)

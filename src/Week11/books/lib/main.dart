@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
@@ -31,6 +32,7 @@ class FuturePage extends StatefulWidget {
 
 class _FuturePageState extends State<FuturePage> {
   String result = '';
+  late Completer completer;
 
   Future<int> returnOneAsync() async {
     await Future.delayed(const Duration(seconds: 3));
@@ -48,14 +50,25 @@ class _FuturePageState extends State<FuturePage> {
   }
 
   Future count() async {
-  int total = 0;
-  total += await returnOneAsync();
-  total += await returnTwoAsync();
-  total += await returnThreeAsync();
-  setState(() {
-    result = total.toString();
-  });
-}
+    int total = 0;
+    total += await returnOneAsync();
+    total += await returnTwoAsync();
+    total += await returnThreeAsync();
+    setState(() {
+      result = total.toString();
+    });
+  }
+
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate();
+    return completer.future;
+  }
+
+  Future calculate() async {
+    await Future.delayed(const Duration(seconds: 5));
+    completer.complete(42);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -67,7 +80,7 @@ class _FuturePageState extends State<FuturePage> {
           child: Column(
         children: [
           const Spacer(),
-          
+
           // Praktikum 1
           // ElevatedButton(
           //     child: const Text('GO!'),
@@ -84,11 +97,28 @@ class _FuturePageState extends State<FuturePage> {
           //     }),
 
           // Praktikum 2
-          ElevatedButton(
-              child: const Text('GO!'),
-              onPressed: () {
-                count();
-              }),
+          // ElevatedButton(
+          //     child: const Text('GO!'),
+          //     onPressed: () {
+          //       count();
+          //     }),
+
+          // Praktikum 3
+          Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: ElevatedButton(
+                child: const Text('GO!', style: TextStyle(color: Colors.white)),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                ),
+                onPressed: () {
+                  getNumber().then((value) {
+                    setState(() {
+                      result = value.toString();
+                    });
+                  });
+                }),
+          ),
 
           const Spacer(),
           Text(result),
@@ -107,5 +137,3 @@ Future<Response> getData() async {
   Uri url = Uri.https(authority, path);
   return http.get(url);
 }
-
-
