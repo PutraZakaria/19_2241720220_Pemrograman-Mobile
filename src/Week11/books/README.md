@@ -56,3 +56,12 @@ Pada langkah 5 dan 6 terjadi penambahan untuk logika error handling, misal jika 
 **Soal 9: Capture hasil praktikum Anda berupa GIF dan lampirkan di README**
 
 ![alt](assets/Soal9.gif)
+
+**Soal 10: Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!**
+
+Untuk memanggil method hanya perlu menaruhnya dibagian seperti berikut ```onPressed:(){handleError();}```, dan ketika di run akan menampilkan seperti ini:
+![alt](assets/Soal10.gif)
+
+Adapaun kode langkah 1 dan 4:
+- ```langkah 1```: Pada langkah ini definisikan fungsi yang akan melempar sebuah error (Exception) dengan pesan "Something terrible happened!" setelah 2 detik.
+- ```langkah 4```: Pada langkah ini definisikan fungsi untuk menunjukkan bagaimana menangani error yang dilempar oleh fungsi asynchronous seperti returnError, dan memastikan ada log atau aksi tambahan setelah error ditangani.
