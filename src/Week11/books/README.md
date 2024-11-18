@@ -51,3 +51,8 @@ Pada langkah 5 dan 6 terjadi penambahan untuk logika error handling, misal jika 
 
 - ```Langkah 1```: Pada langkah ini menggunakan FutureGroup yang biasanya digunakan untuk mendapatkan fleksibilitas untuk menambahkan Futures secara dinamis sebelum mengeksekusinya. Contoh: Mengelola daftar tugas async yang jumlahnya berubah saat runtime.
 - ```Langkah 4```: Pada langkah ini menggunakan Future.wait yang biasanya digunakan untuk situasi sederhana di mana semua Futures sudah diketahui sejak awal. Contoh: Menjalankan beberapa operasi async yang telah didefinisikan.
+
+
+**Soal 9: Capture hasil praktikum Anda berupa GIF dan lampirkan di README**
+
+![alt](assets/Soal9.gif)
