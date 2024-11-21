@@ -111,3 +111,9 @@ Color color = Colors.yellowAccent.shade100;
 Ketika setiap button 'Change Color' ditekan akan diarahkan kehalaman NavigationSecond, dan pada halaman NavigationSecond akan ditampilkan 3 button yaitu Red, Green, dan Blue dimana jika salah satu button ditekan akan  menetapkan nilai warna ke variabel color, misalnya Colors.red.shade200 untuk tombol Red. Kemudian, metode Navigator.pop(context, color) dipanggil, yang akan menutup layar saat ini (NavigationSecond) dan mengembalikan nilai color tersebut ke layar sebelumnya. Dan untuk mengganti warna saya hanya perlu mengganti nilai dari variabel color pada setiap button.
 
 ![alt](assets/Soal16.gif)
+
+**Soal 17: Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ? Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!**
+
+Ketika tombol ditekan, warna dipilih (merah, hijau, atau biru), nilai `color` diperbarui, dan dialog ditutup menggunakan `Navigator.pop(context, color)`. Kemudian, `setState()` dipanggil untuk memperbarui tampilan sehingga latar belakang berubah sesuai warna yang dipilih. Dan untuk mengganti warna saya hanya mengubah nilai dari variabel color pada setiap TextButton().
+
+![alt](assets/Soal17.gif)
