@@ -92,3 +92,17 @@ Tidak ada perbedaan UI antara praktikum 6 dengan praktikum 7, karena pada prakti
 Ada, yaitu ketika terjadi error akan menampilkan pesan 'Something terrible happened!'.
 
 ![alt](assets/Soal14.gif)
+
+**Soal 15: Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda. Silakan ganti dengan warna tema favorit Anda.**
+
+Untuk mengganti title saya mengubah code pada appBar
+```
+appBar: AppBar(
+        title: const Text("Navigation First Screen - Putra Zakaria"),
+      ),
+```
+dan untuk mengganti warna tema favorit saya mengubah nilai dari variabel color
+```
+Color color = Colors.yellowAccent.shade100;
+```
+
