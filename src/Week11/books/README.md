@@ -86,3 +86,9 @@ GPS berhasil menampilkan koordinat GPS ketika dirun dibrowser, karena browser me
 **Soal 13: Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?**
 
 Tidak ada perbedaan UI antara praktikum 6 dengan praktikum 7, karena pada praktikum ini hanya mengubah proses building dilakukan.  Namun, perbedaannya terletak pada cara proses building dilakukan. Pada praktikum 7, digunakan FutureBuilder untuk menangani proses asinkron secara lebih terstruktur dan otomatis, sementara pada praktikum 6, pengelolaan state dilakukan secara manual dengan setState().
+
+**Soal 14: Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?**
+
+Ada, yaitu ketika terjadi error akan menampilkan pesan 'Something terrible happened!'.
+
+![alt](assets/Soal14.gif)
