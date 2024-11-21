@@ -74,3 +74,11 @@ appBar: AppBar(
         title: const Text("Current Location - Putra Zakaria"),
       ),
 ```
+
+
+**Soal 12: Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?**
+
+GPS berhasil menampilkan koordinat GPS ketika dirun dibrowser, karena browser mendukung Geolocation API dan izin lokasi juga sudah diberikan. Namun, data lokasi berasal dari jaringan WIFI atau IP, bukan GPS langsung, karena laptop tidak memiliki modul GPS bawaan. Untuk mendapatkan koordinat yang sesuai bisa dirun didevice yang memiliki modul GPS bawaan.
+<br> Hasil dari penambahan code pada langkah 8 akan menampilkan animasi loading, sedangkan code tambahan pada soal 12 akan memberikan waktu loading selama 3 detik sebelum menampilkan lokasi.
+
+![alt](assets/Soal12.gif)
