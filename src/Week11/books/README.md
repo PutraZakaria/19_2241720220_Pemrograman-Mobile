@@ -65,3 +65,12 @@ Untuk memanggil method hanya perlu menaruhnya dibagian seperti berikut ```onPres
 Adapaun kode langkah 1 dan 4:
 - ```langkah 1```: Pada langkah ini definisikan fungsi yang akan melempar sebuah error (Exception) dengan pesan "Something terrible happened!" setelah 2 detik.
 - ```langkah 4```: Pada langkah ini definisikan fungsi untuk menunjukkan bagaimana menangani error yang dilempar oleh fungsi asynchronous seperti returnError, dan memastikan ada log atau aksi tambahan setelah error ditangani.
+
+**Soal 11: Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.**
+
+Untuk menambahkan nama panggilan pada title bisa dilakukan dengan cara mengubah appBar menjadi seperti berikut:
+```
+appBar: AppBar(
+        title: const Text("Current Location - Putra Zakaria"),
+      ),
+```
