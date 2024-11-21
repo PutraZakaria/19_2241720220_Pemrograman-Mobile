@@ -82,3 +82,7 @@ GPS berhasil menampilkan koordinat GPS ketika dirun dibrowser, karena browser me
 <br> Hasil dari penambahan code pada langkah 8 akan menampilkan animasi loading, sedangkan code tambahan pada soal 12 akan memberikan waktu loading selama 3 detik sebelum menampilkan lokasi.
 
 ![alt](assets/Soal12.gif)
+
+**Soal 13: Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?**
+
+Tidak ada perbedaan UI antara praktikum 6 dengan praktikum 7, karena pada praktikum ini hanya mengubah proses building dilakukan.  Namun, perbedaannya terletak pada cara proses building dilakukan. Pada praktikum 7, digunakan FutureBuilder untuk menangani proses asinkron secara lebih terstruktur dan otomatis, sementara pada praktikum 6, pengelolaan state dilakukan secara manual dengan setState().
