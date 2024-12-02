@@ -16,3 +16,24 @@ Perubahan code untuk mengganti title dan warna tema aplikasi:
     );
   }
 ```
+
+### Soal 2: Tambahkan 5 warna lainnya sesuai keinginan Anda pada variabel colors tersebut.
+
+Perubahan code untuk menambahkan warna:
+```
+class ColorStream {
+  final List<Color> colors = [
+    Colors.blueGrey,
+    Colors.amber,
+    Colors.deepPurple,
+    Colors.lightBlue,
+    Colors.teal,
+    // Add 5 color
+    Colors.pink,
+    Colors.lime,
+    Colors.green,
+    Colors.orange,
+    Colors.purple,
+  ];
+}
+```
