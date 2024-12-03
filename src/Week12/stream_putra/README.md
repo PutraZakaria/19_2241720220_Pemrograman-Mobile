@@ -42,3 +42,7 @@ class ColorStream {
 
 a. Fungsi yield* digunakan untuk menggabungkan stream kedalam stream yang dibuat oleh generator, dimana fungsi yield* akan mengalirkan semua elemen dari sumber stream ke output stream. <br>
 b. Kode ini membuat sebuah stream yang secara otomatis mengirimkan warna dari daftar warna dalam ColorStream secara bergantian, satu per satu setiap detik. Stream ini berputar secara siklis, kembali ke warna pertama setelah mencapai warna terakhir di daftar.
+
+### Soal 4: Capture hasil praktikum Anda berupa GIF dan lampirkan di README
+
+![alt](assets/Soal4.gif)
