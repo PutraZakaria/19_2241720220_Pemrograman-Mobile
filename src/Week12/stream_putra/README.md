@@ -46,3 +46,8 @@ b. Kode ini membuat sebuah stream yang secara otomatis mengirimkan warna dari da
 ### Soal 4: Capture hasil praktikum Anda berupa GIF dan lampirkan di README
 
 ![alt](assets/Soal4.gif)
+
+### Soal 5: Jelaskan perbedaan menggunakan listen dan await for (langkah 9)!
+
+a. `listen` digunakan untuk memasang callback pada stream secara asinkron". Artinya, setiap kali stream menghasilkan data baru, callback dengan `listen` akan dipanggil untuk memproses data tersebut.<br>
+b. `await for` digunakan untuk menunggu setiap elemen dari stream secara sinkron". Ini berarti eksekusi akan berhenti sementara untuk menunggu elemen berikutnya dari stream, dan setiap elemen diproses satu per satu dalam urutan.
