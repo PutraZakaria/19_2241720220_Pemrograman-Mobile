@@ -81,3 +81,9 @@ langkah 10:
 Code ini digunakan untuk menghasilkan angka secara acak dari 0-9 ketika method yang dipanggil, kemudian memanggil method addNumberToSink untuk mengirim angka acar kedalam stream.
 
 ![alt](assets/Soal6.gif)
+
+### Soal 7: Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+
+Pada langkah 13 sampai dengan 15 terjadi penambahan code untuk error handling, dimana ketika terjadi error, maka nilai dari lastNumber akan diatur menjadi -1, dan pada langkah 15 diberikan code untuk memanggil eror handling yang sudah dibuat.
+
+![alt](assets/Soal7.gif)
