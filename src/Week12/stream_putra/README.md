@@ -87,3 +87,9 @@ Code ini digunakan untuk menghasilkan angka secara acak dari 0-9 ketika method y
 Pada langkah 13 sampai dengan 15 terjadi penambahan code untuk error handling, dimana ketika terjadi error, maka nilai dari lastNumber akan diatur menjadi -1, dan pada langkah 15 diberikan code untuk memanggil eror handling yang sudah dibuat.
 
 ![alt](assets/Soal7.gif)
+
+### Soal 8: Jelaskan maksud kode langkah 1-3 tersebut!
+
+Pada langkah 1-3 terjadi penambahan code untuk melakukan manipulasi atau transformasi data stream. Pada langkah 1 dilakukan proses deklarasi variabel transformer, pada langkah 2 ditambahkan code untuk memodifikasi data dengan cara dikalikan 10, pada langkah 3 ditambahkan code untuk menggunakan transform data yang melewati stream.
+
+![alt](assets/Soal8.gif)
