@@ -93,3 +93,44 @@ Pada langkah 13 sampai dengan 15 terjadi penambahan code untuk error handling, d
 Pada langkah 1-3 terjadi penambahan code untuk melakukan manipulasi atau transformasi data stream. Pada langkah 1 dilakukan proses deklarasi variabel transformer, pada langkah 2 ditambahkan code untuk memodifikasi data dengan cara dikalikan 10, pada langkah 3 ditambahkan code untuk menggunakan transform data yang melewati stream.
 
 ![alt](assets/Soal8.gif)
+
+### Soal 9: Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+
+langkah 2:
+```
+    numberStream = NumberStream();
+    numberStreamController = numberStream.controller;
+    Stream stream = numberStreamController.stream;
+    // stream.transform(transformer).listen((event) {
+    subscription = stream.listen((event) {
+      setState(() {
+        lastNumber = event;
+      });
+    });
+```
+digunakan untuk menyimpan method yang digunakan untuk melekukan listen pada variabel subscription
+
+langkah 6 (pada method dispose):
+```
+    subscription.cancel();
+```
+digunakan untuk membatalkan langganan (subscription) dari stream, sehingga stream tidak akan lagi mengirimkan data ke listener
+
+langkah 8:
+```
+void addRandomNumber() {
+    Random random = Random();
+    int myNum = random.nextInt(10);
+    if (!numberStreamController.isClosed) {
+      numberStream.addNumberToSink(myNum);
+    } else {
+      setState(() {
+        lastNumber = -1;
+      });
+    }
+    // numberStream.addError();
+  }
+```
+penambahan code berupa pengondisian (if else) digunakan untuk memastikan bahwa numberStreamController belum ditutup sebelum mencoba mengirimkan data
+
+![alt](assets/Soal9.gif)
