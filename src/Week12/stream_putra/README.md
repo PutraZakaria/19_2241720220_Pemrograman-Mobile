@@ -51,3 +51,33 @@ b. Kode ini membuat sebuah stream yang secara otomatis mengirimkan warna dari da
 
 a. `listen` digunakan untuk memasang callback pada stream secara asinkron". Artinya, setiap kali stream menghasilkan data baru, callback dengan `listen` akan dipanggil untuk memproses data tersebut.<br>
 b. `await for` digunakan untuk menunggu setiap elemen dari stream secara sinkron". Ini berarti eksekusi akan berhenti sementara untuk menunggu elemen berikutnya dari stream, dan setiap elemen diproses satu per satu dalam urutan.
+
+### Soal 6: Jelaskan maksud kode langkah 8 dan 10 tersebut!
+
+langkah 8:
+```
+  void initState() {
+    numberStream = NumberStream();
+    numberStreamController = numberStream.controller;
+    Stream stream = numberStreamController.stream;
+    stream.listen((event) {
+      setState(() {
+        lastNumber = event;
+      });
+    });
+    super.initState();
+  }
+```
+Code ini digunakan untuk mengatur stream dan mendapatkan perubahan data menggunakan listen, sehingga ketika data baru diterima nilai dari `lastNumber` akan diperbarui.
+
+langkah 10:
+```
+  void addRandomNumber() {
+    Random random = Random();
+    int myNum = random.nextInt(10);
+    numberStream.addNumberToSink(myNum);
+  }
+```
+Code ini digunakan untuk menghasilkan angka secara acak dari 0-9 ketika method yang dipanggil, kemudian memanggil method addNumberToSink untuk mengirim angka acar kedalam stream.
+
+![alt](assets/Soal6.gif)
