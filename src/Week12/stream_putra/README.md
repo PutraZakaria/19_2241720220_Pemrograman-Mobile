@@ -134,3 +134,12 @@ void addRandomNumber() {
 penambahan code berupa pengondisian (if else) digunakan untuk memastikan bahwa numberStreamController belum ditutup sebelum mencoba mengirimkan data
 
 ![alt](assets/Soal9.gif)
+
+### Soal 10: Jelaskan mengapa error itu bisa terjadi?
+
+Error terjadi karena `Redundansi` dimana dua subcription ke stream yang sama (subscription dan subscription2) dengan tindakan yang identik (setState untuk memperbarui values) akan menyebabkan values diperbarui dua kali untuk setiap event. Hasil akhirnya adalah bahwa string values akan memiliki duplikasi dari setiap event.
+
+### Soal 11: Jelaskan mengapa hal itu bisa terjadi ?
+
+Hal ini bisa terjadi karena ada 2 subscription ke stream yang sama dengan tindakan yang identik, sehingga values diperbarui dua kali dan menghasilkan duplikasi random number.
+![alt](assets/Soal11.gif)
