@@ -1,4 +1,4 @@
-import 'package:bloc_random_nama/random_screen.dart';
+import 'package:bloc_random_putra/random_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
