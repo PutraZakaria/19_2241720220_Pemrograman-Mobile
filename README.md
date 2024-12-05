@@ -19,6 +19,7 @@
 - Praktikum 9: https://github.com/PutraZakaria/19_2241720220_Pemrograman-Mobile/tree/main/src/Week9
 - Praktikum 10: https://github.com/PutraZakaria/19_2241720220_Pemrograman-Mobile/tree/main/src/Week10
 - Praktikum 11: https://github.com/PutraZakaria/19_2241720220_Pemrograman-Mobile/tree/main/src/Week11
+- Praktikum 12: https://github.com/PutraZakaria/19_2241720220_Pemrograman-Mobile/tree/main/src/Week12
 
 <br>
 
